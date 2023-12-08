@@ -107,6 +107,7 @@ router.patch('/update/:id', async (req, res) => {
 //Delete by ID Method
 // router.delete('/delete/:id', ...): This line sets up a route handler for HTTP DELETE requests at the '/delete/:id' endpoint. It's using the delete method of the router
 // res.send(Document with ${data.name} has been deleted..);: If the document is successfully deleted, this line sends a simple text response to the client, indicating which document has been deleted.
+// 
 router.delete('/delete/:id', async (req, res) => {
     try {
         const id = req.params.id;
@@ -117,3 +118,4 @@ router.delete('/delete/:id', async (req, res) => {
         res.status(400).json({ message: error.message })
     }
 })
+// catch (error) = It's used for error handling. If an error occurs within the corresponding try block, the code inside the catch block will be executed.
