@@ -1,3 +1,5 @@
+// This line declares a constant variable named `express`. The `const` keyword is used to create a variable that cannot be reassigned.
+
 const express = require('express');
 
 const router = express.Router()
